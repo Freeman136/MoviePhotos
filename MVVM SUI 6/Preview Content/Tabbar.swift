@@ -32,12 +32,10 @@ struct Tabbar: View {
                     }
             }
             .tag("1")
-            
             .tabItem {
                 Image(systemName: "house")
                 Text("Home")
             }
-            
             
             NavigationView {
                 Color.clear
@@ -53,7 +51,6 @@ struct Tabbar: View {
             .tabItem {
                 Image(systemName: "magnifyingglass")
                 Text("Search")
-                
             }
             
             NavigationView {
@@ -70,7 +67,6 @@ struct Tabbar: View {
             .tabItem {
                 Image(systemName: "person.circle")
                 Text("Details")
-                
             }
         }
         .accentColor(.blue)
