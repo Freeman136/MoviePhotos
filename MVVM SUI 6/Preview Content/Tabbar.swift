@@ -1,5 +1,5 @@
 //
-//  Untitled.swift
+//  Tabbar.swift
 //  MVVM SUI 6
 //
 //  Created by Andrew on 02.11.2024.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct Tabbar: View {
     
     init() {
             let appearance = UITabBarAppearance()
@@ -70,5 +70,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    Tabbar()
 }

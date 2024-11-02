@@ -11,7 +11,7 @@ import SwiftUI
 struct NewSUIApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            Tabbar()
         }
     }
 }
