@@ -35,16 +35,6 @@
 			path = "MVVM SUI 6";
 			sourceTree = "<group>";
 		};
-		4930BCBF2CD52C14006B1985 /* MVVM SUI 6Tests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "MVVM SUI 6Tests";
-			sourceTree = "<group>";
-		};
-		4930BCC92CD52C14006B1985 /* MVVM SUI 6UITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "MVVM SUI 6UITests";
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +66,6 @@
 			isa = PBXGroup;
 			children = (
 				4930BCAC2CD52C12006B1985 /* MVVM SUI 6 */,
-				4930BCBF2CD52C14006B1985 /* MVVM SUI 6Tests */,
-				4930BCC92CD52C14006B1985 /* MVVM SUI 6UITests */,
 				4930BCAB2CD52C12006B1985 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,9 +118,6 @@
 			dependencies = (
 				4930BCBE2CD52C14006B1985 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				4930BCBF2CD52C14006B1985 /* MVVM SUI 6Tests */,
-			);
 			name = "MVVM SUI 6Tests";
 			packageProductDependencies = (
 			);
@@ -152,9 +137,6 @@
 			);
 			dependencies = (
 				4930BCC82CD52C14006B1985 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				4930BCC92CD52C14006B1985 /* MVVM SUI 6UITests */,
 			);
 			name = "MVVM SUI 6UITests";
 			packageProductDependencies = (
