@@ -8,48 +8,54 @@
 import SwiftUI
 
 struct Tabbar: View {
+    @State var selection = "2"
     
     init() {
-            let appearance = UITabBarAppearance()
-            appearance.configureWithOpaqueBackground()
+        let appearance = UITabBarAppearance()
+        appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(Color(red: 0.141, green: 0.165, blue: 0.196, opacity: 1))
-
-            UITabBar.appearance().standardAppearance = appearance
-            UITabBar.appearance().scrollEdgeAppearance = appearance
-        }
+        
+        UITabBar.appearance().standardAppearance = appearance
+        UITabBar.appearance().scrollEdgeAppearance = appearance
+    }
     
     var body: some View {
-        TabView {
-                NavigationView {
-                    Color.clear
-                        .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                Text("What do you want to watch?")
-                                    .font(.system(size: 16, weight: .bold))
-                            }
-                        }
-                }
-                .tabItem {
-                    Image(systemName: "house")
-                    Text("Home")
-                }
-            
-
+        
+        TabView (selection: $selection) {
             NavigationView {
-                    Color.clear
-                        .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                Text("Search")
-                                    .font(.system(size: 16, weight: .bold))
-                            }
+                Color.clear
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            Text("What do you want to watch?")
+                                .font(.system(size: 16, weight: .bold))
                         }
-                }
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-
-                }
-
+                    }
+            }
+            .tag("1")
+            
+            .tabItem {
+                Image(systemName: "house")
+                Text("Home")
+            }
+            
+            
+            NavigationView {
+                Color.clear
+                    .toolbar {
+                        ToolbarItem(placement: .principal) {
+                            Text("Search")
+                                .font(.system(size: 16, weight: .bold))
+                        }
+                    }
+            }
+            .tag("2")
+            
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Search")
+                
+            }
+            
             NavigationView {
                 Color.clear
                     .toolbar {
@@ -59,10 +65,12 @@ struct Tabbar: View {
                         }
                     }
             }
+            .tag("3")
+            
             .tabItem {
                 Image(systemName: "person.circle")
                 Text("Details")
-
+                
             }
         }
         .accentColor(.blue)
