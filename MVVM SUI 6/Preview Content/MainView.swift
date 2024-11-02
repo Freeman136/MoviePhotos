@@ -11,6 +11,7 @@ import Combine
 class MainViewModel: ObservableObject {
     
     @Published var text: String = "Hello, SwiftData!"
+    
 }
 
 struct MainView: View {
@@ -19,6 +20,7 @@ struct MainView: View {
     
     var body: some View {
         VStack {
+            
             Text(viewModel.text)
                 .padding()
             
